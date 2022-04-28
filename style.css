@@ -1,0 +1,7 @@
+body.pl :lang(en) {
+    display: none;
+}
+
+body.en :lang(pl) {
+    display: none;
+}
