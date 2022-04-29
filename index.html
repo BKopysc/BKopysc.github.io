@@ -9,8 +9,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-	<link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="./script.js"></script>
+
 
 </head>
 
@@ -20,17 +21,13 @@
 	<div class="content container">
 		<br />
 
-		<section class="section hass">
-			<h2 class="title is-5 has-text-centered has-text-grey-lighter" id="nameTitle">
-				<t lang="en">My name is</t>
-				<t lang="pl">Nazywam się</t>
-			</h2>
+		<section class="section">
 			<div class="is-flex is-horizontal-centered">
 				<figure class="image is-128x128">
 					<img class="is-rounded" src="./img/profile.png">
 				</figure>
 			</div>
-			<h2 class="title has-text-centered has-text-light" id="mainTitle">Bartłomiej Kopyść</h2>
+			<h1 class="title is-3 has-text-centered has-text-light" id="mainTitle">Bartłomiej Kopyść</h2>
 		</section>
 
 		<section class="section">
@@ -137,45 +134,142 @@
 
 		<section class="section">
 			<nav class="panel">
-				<p class="panel-heading">
-					Repositories
+				<p class="panel-heading has-text-centered">
+					<t lang="en">Code repositories</t>
+					<t lang="pl">Repozytorium z kodem</t>
 				</p>
 				<p class="panel-tabs">
-					<a class="is-active" id="university-tabs">Univeristy tasks</a>
-					<a id="personal-tabs">Personal projects</a>
+					<a class="is-active" id="web-tabs" onclick="selectWebTabs()">Web</a>
+					<a id="software-tabs" onclick="selectSoftwareTabs()">Software</a>
 				</p>
-				<a class="panel-block">
-					<span class="material-icons panel-icon">
-						description
-					</span>
-					pingpong
-				</a>
+				<div id="panel-web">
+					<a class="panel-block">
+						<span class="material-icons panel-icon">
+							language
+						</span>
+						Ping Pong
+						<span class="tag panel-tag">React.js</span>
+					</a>
+					<a class="panel-block">
+						<span class="material-icons panel-icon">
+							language
+						</span>
+						Merchant Dashboard
+						<span class="tag panel-tag">React.js</span>
+					</a>
+					<a class="panel-block">
+						<span class="material-icons panel-icon">
+							language
+						</span>
+						Simple Marketplace
+						<span class="tag panel-tag">.Net</span>
+						<span class="tag panel-tag">SQL Server Express</span>
+					</a>
+					<a class="panel-block">
+						<span class="material-icons panel-icon">
+							language
+						</span>
+						Password Manager
+						<span class="tag panel-tag">Flask</span>
+						<span class="tag panel-tag">SQLite</span>
+					</a>
+					<a class="panel-block">
+						<span class="material-icons panel-icon">
+							language
+						</span>
+						Ingredient Calc for cooking
+						<span class="tag panel-tag">HTML</span>
+						<span class="tag panel-tag">JS</span>
+						<span class="tag panel-tag">CSS</span>
+					</a>
 
+				</div>
+				<div id="panel-software" class="is-hidden">
+					<a class="panel-block">
+						<span class="material-icons panel-icon">
+							desktop_windows
+						</span>
+						Python Movie Maker
+						<span class="tag panel-tag">Python</span>
+						<span class="tag panel-tag">PyQT5</span>
+					</a>
+					<a class="panel-block">
+						<span class="material-icons panel-icon">
+							desktop_windows
+						</span>
+						Simple parallel programs
+						<span class="tag panel-tag">C</span>
+						<span class="tag panel-tag">OpenMP</span>
+						<span class="tag panel-tag">MPI</span>
+					</a>
+				</div>
 			</nav>
 		</section>
 
-		
+		<section class="section">
+			<h5 class="subtitle is-5 has-text-light">
+				<t lang="en">Currently I'm working on:</t>
+				<t lang="pl">Obecnie pracuję nad:</t>
+			</h5>
+			<div class="box currently-box">
+				<ul>
+					<li class="has-text-grey-lighter">
+						<t lang="en">Web app for food managment in home area and dietary analysis</t>
+						<t lang="pl">Aplikacją internetową do zarządzania żywnością w gospodarstwie domowym i analizą
+							żywieniowej</t>
+						<span class="tag working-tag">Python</span>
+						<span class="tag working-tag">Django</span>
+						<span class="tag working-tag">PostgreSQL</span>
+					</li>
+					<li class="has-text-grey-lighter">
+						<t lang="en">Web app for reviewing and collecting books and films.</t>
+						<t lang="pl">Aplikacją internetową do recenzjowania i kolekcjonowania książek i filmów</t>
+						<span class="tag working-tag">Spring</span>
+						<span class="tag working-tag">React.js</span>
+						<span class="tag working-tag">PostgreSQL</span>
+					</li>
+					<li class="has-text-grey-lighter">
+						<t lang="en">Team project: social web app based on map: <em>SocialMap</em></t>
+						<t lang="pl">Projektem zespołowym: portal społecznościowy bazujący na mapie: <em>SocialMap</em>
+						</t>
+						<span class="tag working-tag">.NET</span>
+						<span class="tag working-tag">React.js</span>
+						<span class="tag working-tag">SQL Server Express</span>
+					</li>
 
-		<h6 class="subtitle is-6">You can find here mainly my
-			university projects but also my own ideas</h6>
-		<h4 class="subtitle is-4">Currently I&#39;m working on:</h4>
-		<ul>
-			<li>Web app for food managment in home area. Expiration date reminders and data analyze for healthy
-				hints 🍏
-				(<code>Python</code> + <code>Django</code> + <code>PostgreSQL</code>)</li>
-			<li>Web app for reviewing books and films. You can add ratings and items to your library and also share
-				your
-				collection 📙 (<code>Spring</code> + <code>React.js</code> +<code>PostgreSQL</code>)</li>
-			<li>Team project: social web app for sharing favourite places on map: <em>SocialMap</em>. Favourite
-				restaurants,
-				graffitis and more in one sketching. Likes and dislikes reactions are welcome 🗺️ (<code>.NET</code>
-				+
-				<code>React.js </code> + <code>Microsoft Express SQL</code> )
-			</li>
-			<li>Simply 3D graphic engine for university lecture 🖌️ (<code>C++</code>)
+					<li class="has-text-grey-lighter">
+						<t lang="en">Simply 3D graphic engine for university classes</t>
+						<t lang="pl">Prosty silnik 3D na zajęcia ze studiów</t>
+						<span class="tag working-tag">C++</span>
+					</li>
+				</ul>
+			</div>
+		</section>
 
-				&nbsp;</li>
-		</ul>
+		<hr>
+		<section class="section">
+			<h3 class="subtitle is-3 has-text-light has-text-centered">
+				<t lang="en">Enterteiment:</t>
+				<t lang="pl">Rozrywka:</t>
+			</h3>
+
+			<h3 class="subtitle is-3 gaming-text has-text-grey-lighter">
+				<t lang="en">Gaming zone:</t>
+				<t lang="pl">Strefa gier:</t>
+				<figure class="image">
+					<img src="./img/logo-white-new.png">
+				</figure>
+	
+			</h3>
+
+
+
+
+
+		</section>
+
+
+
 		<h2>Fun zone</h2>
 		<p>My fun games made in <code>PICO-8</code> or <code>Unity</code>:<br><a
 				href="https://masterthegrey.itch.io">https://masterthegrey.itch.io</a></p>
@@ -234,13 +328,5 @@
 		<p>LinkedIn: <a href="https://www.linkedin.com/in/bartłomiej-kopyść-5bbb91205/"></a></p>
 	</div>
 </footer>
-
-<script>
-	function load() {
-		document.body.className = 'pl';
-	}
-
-	window.onload = load;
-</script>
 
 </html>

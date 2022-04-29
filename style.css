@@ -1,3 +1,8 @@
+@font-face{
+    font-family: retroFont;
+    src: url(./fonts/VT323-Regular.ttf);
+}
+
 body.pl :lang(en) {
     display: none;
 }
@@ -50,6 +55,28 @@ body {
     animation: gradient 30s ease infinite;
 }
 
+.panel{
+    background-color: rgb(192, 191, 191);
+}
+
+.panel-tag{
+    margin-left: 8px;
+}
+
+.working-tag{
+    margin-left: 8px;
+}
+
+.gaming-text{
+    font-family: retroFont;
+}
+
+@media (max-width: 600px) {
+
+    .working-tag{
+        margin-top: 2px;
+    }
+  }
 
 @keyframes gradient {
     0% {
