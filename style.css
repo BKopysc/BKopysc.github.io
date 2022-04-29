@@ -6,12 +6,16 @@ body.en :lang(pl) {
     display: none;
 }
 
-#nameTitle, #nameTitle2 {
+/* #nameTitle {
     margin-bottom: 0px;
-}
+} */
 
 #mainTitle{
     margin-top: 20px;
+}
+
+.is-horizontal-centered {
+    justify-content: center;
 }
 
 .tile {

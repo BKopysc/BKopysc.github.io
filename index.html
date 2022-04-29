@@ -9,6 +9,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
 
 </head>
 
@@ -18,23 +20,29 @@
 	<div class="content container">
 		<br />
 
-		<h2 class="title is-5 has-text-centered has-text-grey-lighter" id="nameTitle">
-			<t lang="en">My name is</t>
-			<t lang="pl">Nazywam się</t>
-		</h2>
-		<h2 class="title has-text-centered has-text-light" id="mainTitle">Bartłomiej Kopyść</h2>
-
+		<section class="section hass">
+			<h2 class="title is-5 has-text-centered has-text-grey-lighter" id="nameTitle">
+				<t lang="en">My name is</t>
+				<t lang="pl">Nazywam się</t>
+			</h2>
+			<div class="is-flex is-horizontal-centered">
+				<figure class="image is-128x128">
+					<img class="is-rounded" src="./img/profile.png">
+				</figure>
+			</div>
+			<h2 class="title has-text-centered has-text-light" id="mainTitle">Bartłomiej Kopyść</h2>
+		</section>
 
 		<section class="section">
 			<h5 class="subtitle is-5 has-text-centered">
-				<strong class="has-text-light" >
+				<strong class="has-text-light">
 					<t lang="en">I'm insterested in:</t>
 					<t lang="pl">Interesuję się</t>
 				</strong>
 			</h5>
 
 			<div class="tile is-ancestor">
-				<div class="tile is-parent" >
+				<div class="tile is-parent">
 					<div class="tile is-child interest-tile box">
 						<p class="title is-4 has-text-centered has-text-light">
 							🖥️ IT
@@ -51,8 +59,8 @@
 							<t lang="en">🕹️ Retro games</t>
 							<t lang="pl">🕹️ Grami retro</t>
 						</p>
-						
-						
+
+
 						<figure class="image is-16by9" id="i-frame-2">
 							<img src="./img/retro.jpg">
 						</figure>
@@ -71,101 +79,149 @@
 					</div>
 				</div>
 			</div>
-	</section>
+		</section>
 
-	
-	<section class="section">
-		<h5 class="subtitle is-5">
-			<strong class="has-text-light" >
-				<t lang="en">I've used a bit:</t>
-				<t lang="pl">Używałem trochę:</t>
-			</strong>
-		</h5>
 
-		<box>
-			<div class="tags">
-				<span class="tag">Assembler</span>
-				
+		<section class="section">
+			<h5 class="subtitle is-5">
+				<strong class="has-text-light">
+					<t lang="en">I've used a bit:</t>
+					<t lang="pl">Używałem trochę:</t>
+				</strong>
+			</h5>
+
+			<div class="box">
+				<div class="tags">
+					<span class="tag">Asembler</span>
+					<span class="tag">Spring</span>
+					<span class="tag">C++</span>
+					<span class="tag">.NET</span>
+					<span class="tag">Lua</span>
+					<span class="tag">Ruby</span>
+				</div>
 			</div>
-		</box>
-	</section>
 
-	<h5 class="subtitle is-5"><strong>I&#39;ve used a bit:</strong> <code>Ruby</code>,
-		<code>Asembler</code>, <code>Spring</code>,<code>C++</code>, <code>.NET</code>, <code>Lua</code>
-	</h5>
-	<h5 class="subtitle is-5"><strong>I&#39;m frequently using:</strong>
-		<code>Python</code>, <code>Django/Flask</code>, <code>C</code>, <code>C#</code>, <code>Java</code>,
-		<code>React.js</code>
-	</h5>
-	<h6 class="subtitle is-6">And I want to use even more 👀</h6>
-	<h5 class="subtitle is-5"><strong>I&#39;m in loved with:</strong> <code>🗔 Windows</code>
-		and <code>🐧 Linux</code></h5>
-	<h6 class="subtitle is-6">You can find here mainly my
-		university projects but also my own ideas</h6>
-	<h4 class="subtitle is-4">Currently I&#39;m working on:</h4>
-	<ul>
-		<li>Web app for food managment in home area. Expiration date reminders and data analyze for healthy
-			hints 🍏
-			(<code>Python</code> + <code>Django</code> + <code>PostgreSQL</code>)</li>
-		<li>Web app for reviewing books and films. You can add ratings and items to your library and also share
-			your
-			collection 📙 (<code>Spring</code> + <code>React.js</code> +<code>PostgreSQL</code>)</li>
-		<li>Team project: social web app for sharing favourite places on map: <em>SocialMap</em>. Favourite
-			restaurants,
-			graffitis and more in one sketching. Likes and dislikes reactions are welcome 🗺️ (<code>.NET</code>
-			+
-			<code>React.js </code> + <code>Microsoft Express SQL</code> )
-		</li>
-		<li>Simply 3D graphic engine for university lecture 🖌️ (<code>C++</code>)
+			<h5 class="subtitle is-5">
+				<strong class="has-text-light">
+					<t lang="en">I'm frequently using:</t>
+					<t lang="pl">Często używam:</t>
+				</strong>
+			</h5>
 
-			&nbsp;</li>
-	</ul>
-	<h2>Fun zone</h2>
-	<p>My fun games made in <code>PICO-8</code> or <code>Unity</code>:<br><a
-			href="https://masterthegrey.itch.io">https://masterthegrey.itch.io</a></p>
-	<p>&nbsp;
-		&nbsp;</p>
-	<hr>
+			<div class="box">
+				<div class="tags">
+					<span class="tag">Python</span>
+					<span class="tag">Django/Flask</span>
+					<span class="tag">C#</span>
+					<span class="tag">C</span>
+					<span class="tag">React.js</span>
+					<span class="tag">Java</span>
+				</div>
+			</div>
 
-	<br />
-	<h5><strong>Interesuję się:</strong> 🖥️
-		informatyką, 🕹️ grami retro i 🎬 tworzeniem filmów</h5>
-	<h5><strong>Używałem trochę:</strong> <code>Ruby</code>,
-		<code>Asembler</code>, <code>Spring</code>, <code>C++</code>, <code>.NET</code>, <code>Lua</code>
-	</h5>
-	<h5><strong>Często używam:</strong> <code>Python</code>,
-		<code>Django/Flask</code>, <code>C</code>, <code>C#</code>, <code>Java</code>, <code>React.js</code>.
-	</h5>
-	<h6>I chcę używać jeszcze więcej 👀</h6>
-	<h5><strong>Uwielbiam:</strong> <code>🗔 Windows</code> i
-		<code>🐧 Linux</code>.
-	</h5>
-	<h4>Znajdziesz tu głównie moje
-		projekty uniwersyteckie, ale także własne pomysły.</h4>
-	<p>&nbsp;</p>
-	<h2>Obecnie pracuję nad:</h2>
-	<ul>
-		<li>Aplikacją internetową do zarządzania jedzeniem w gospodarstwie domowym. Przypominanie o dacie
-			ważności i
-			analiza danych do generowania zdrowych wskazówek 🍏 (<code>Python</code> + <code>Django</code> +
-			<code>PostgreSQL</code>)
-		</li>
-		<li>Aplikacją internetową do recenzowania książek i filmów. Użytkownik może dodawać oceny i pozycje do
-			swojej
-			biblioteki, a także dzielić się swoją kolekcją 📙 (<code>Spring</code> + <code>React.js</code> +
-			<code>PostgreSQL</code>)
-		</li>
-		<li>Projektem zespołowym: aplikacja społecznościowa do dzielenia się ulubionymi miejscami na mapie:
-			<em>SocialMap</em>. Ulubione restauracje, graffiti i wiele więcej w jednym miejscu. Mile widziane są
-			reakcje
-			typu &quot;lubię to i nie lubię&quot; 🗺️ (<code>.NET</code> + <code>React.js</code> +
-			<code>Microsoft Express SQL</code> )
-		</li>
-		<li>Prostym silnikiem graficznym 3D na zajęcia 🖌️ (<code>C++</code>)</li>
-	</ul>
-	<h2>Strefa zabawy</h2>
-	<p>Moje gry stworzone w <code>PICO-8</code> lub <code>Unity</code>:<br><a
-			href="https://masterthegrey.itch.io">https://masterthegrey.itch.io</a></p>
+			<h5 class="subtitle is-5">
+				<strong class="has-text-light">
+					<t lang="en">My favourites systems:</t>
+					<t lang="pl">Moje ulubione systemy:</t>
+				</strong>
+			</h5>
+
+			<div class="box">
+				<div class="tags">
+					<span class="tag">Windows</span>
+					<span class="tag">Linux</span>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="section">
+			<nav class="panel">
+				<p class="panel-heading">
+					Repositories
+				</p>
+				<p class="panel-tabs">
+					<a class="is-active" id="university-tabs">Univeristy tasks</a>
+					<a id="personal-tabs">Personal projects</a>
+				</p>
+				<a class="panel-block">
+					<span class="material-icons panel-icon">
+						description
+					</span>
+					pingpong
+				</a>
+
+			</nav>
+		</section>
+
+		
+
+		<h6 class="subtitle is-6">You can find here mainly my
+			university projects but also my own ideas</h6>
+		<h4 class="subtitle is-4">Currently I&#39;m working on:</h4>
+		<ul>
+			<li>Web app for food managment in home area. Expiration date reminders and data analyze for healthy
+				hints 🍏
+				(<code>Python</code> + <code>Django</code> + <code>PostgreSQL</code>)</li>
+			<li>Web app for reviewing books and films. You can add ratings and items to your library and also share
+				your
+				collection 📙 (<code>Spring</code> + <code>React.js</code> +<code>PostgreSQL</code>)</li>
+			<li>Team project: social web app for sharing favourite places on map: <em>SocialMap</em>. Favourite
+				restaurants,
+				graffitis and more in one sketching. Likes and dislikes reactions are welcome 🗺️ (<code>.NET</code>
+				+
+				<code>React.js </code> + <code>Microsoft Express SQL</code> )
+			</li>
+			<li>Simply 3D graphic engine for university lecture 🖌️ (<code>C++</code>)
+
+				&nbsp;</li>
+		</ul>
+		<h2>Fun zone</h2>
+		<p>My fun games made in <code>PICO-8</code> or <code>Unity</code>:<br><a
+				href="https://masterthegrey.itch.io">https://masterthegrey.itch.io</a></p>
+		<p>&nbsp;
+			&nbsp;</p>
+		<hr>
+
+		<br />
+		<h5><strong>Interesuję się:</strong> 🖥️
+			informatyką, 🕹️ grami retro i 🎬 tworzeniem filmów</h5>
+		<h5><strong>Używałem trochę:</strong> <code>Ruby</code>,
+			<code>Asembler</code>, <code>Spring</code>, <code>C++</code>, <code>.NET</code>, <code>Lua</code>
+		</h5>
+		<h5><strong>Często używam:</strong> <code>Python</code>,
+			<code>Django/Flask</code>, <code>C</code>, <code>C#</code>, <code>Java</code>, <code>React.js</code>.
+		</h5>
+		<h6>I chcę używać jeszcze więcej 👀</h6>
+		<h5><strong>Uwielbiam:</strong> <code>🗔 Windows</code> i
+			<code>🐧 Linux</code>.
+		</h5>
+		<h4>Znajdziesz tu głównie moje
+			projekty uniwersyteckie, ale także własne pomysły.</h4>
+		<p>&nbsp;</p>
+		<h2>Obecnie pracuję nad:</h2>
+		<ul>
+			<li>Aplikacją internetową do zarządzania jedzeniem w gospodarstwie domowym. Przypominanie o dacie
+				ważności i
+				analiza danych do generowania zdrowych wskazówek 🍏 (<code>Python</code> + <code>Django</code> +
+				<code>PostgreSQL</code>)
+			</li>
+			<li>Aplikacją internetową do recenzowania książek i filmów. Użytkownik może dodawać oceny i pozycje do
+				swojej
+				biblioteki, a także dzielić się swoją kolekcją 📙 (<code>Spring</code> + <code>React.js</code> +
+				<code>PostgreSQL</code>)
+			</li>
+			<li>Projektem zespołowym: aplikacja społecznościowa do dzielenia się ulubionymi miejscami na mapie:
+				<em>SocialMap</em>. Ulubione restauracje, graffiti i wiele więcej w jednym miejscu. Mile widziane są
+				reakcje
+				typu &quot;lubię to i nie lubię&quot; 🗺️ (<code>.NET</code> + <code>React.js</code> +
+				<code>Microsoft Express SQL</code> )
+			</li>
+			<li>Prostym silnikiem graficznym 3D na zajęcia 🖌️ (<code>C++</code>)</li>
+		</ul>
+		<h2>Strefa zabawy</h2>
+		<p>Moje gry stworzone w <code>PICO-8</code> lub <code>Unity</code>:<br><a
+				href="https://masterthegrey.itch.io">https://masterthegrey.itch.io</a></p>
 	</div>
 </body>
 
