@@ -11,43 +11,94 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<script src="./script.js"></script>
-
-
 </head>
 
 <body class="pl">
-	<button onclick="document.body.className='en'">english</button><button
-		onclick="document.body.className='pl'">polski</button>
+
 	<div class="content container">
 		<br />
 
-		<section class="section"  id="title-section">
+		<div id="language-div">
+			<div>
+				<input type="image" id="pl-language" class="lang-border" src="./img/icons8-poland-48.png"
+					onclick="changeLanguage('pl')"></input>
+			</div>
+			<div>
+				<input type="image" id="en-language" src="./img/icons8-great-britain-48.png"
+					onclick="changeLanguage('en')"></input>
+			</div>
+		</div>
 
-				<div id="title-div">
-					<img id="profile-img" src="./img/main_profile.jpeg">
-					<div id="titles-div">
-						<div id="welcome-div">
-							<t lang="en">Hi! I am</t>
-							<t lang="pl">Cześć! Nazywam się</t>
-						</div>
-						<div id="name-div">
-							<t>Bartłomiej Kopyść</t>
-						</div>
-						<div id="about-div">
-							<div class="content has-text-grey-lighter" id="about-content-div">
-								<t lang="pl">Jestem studentem Politechniki Warszawskiej na kierunku Informatyka Stosowana. Obecnie jestem na trzecim roku. Stale pogłębiam swoją wiedzę i umiejętności z zakresu technologii i sztuki. Chętnie uczę się nowych rzeczy.</t>
-								<t lang="en">I am a student at Warsaw University of Technology, majoring in Applied Informatics. Currently I am on my third year. I am constantly expanding my knowledge and abilities in the field of technology and art. I am eager to learn new things.</t>
-							</div>
+		<br />
+		<br />
+		<section class="section" id="title-section">
+
+			<div id="title-div">
+				<img id="profile-img" src="./img/main_profile.jpeg">
+				<div id="titles-div">
+					<div id="welcome-div">
+						<t lang="en">Hi! I am</t>
+						<t lang="pl">Cześć! Nazywam się</t>
+					</div>
+					<div id="name-div">
+						<t>Bartłomiej Kopyść</t>
+					</div>
+					<div id="about-div">
+						<div class="content has-text-grey-lighter" id="about-content-div">
+							<t lang="pl">Jestem studentem Politechniki Warszawskiej na kierunku Informatyka Stosowana.
+								Obecnie jestem na trzecim roku. Stale pogłębiam swoją wiedzę i umiejętności z zakresu
+								technologii i sztuki. Chętnie uczę się nowych rzeczy.</t>
+							<t lang="en">I am a student at Warsaw University of Technology, majoring in Applied
+								Informatics. Currently I am on my third year. I am constantly expanding my knowledge and
+								abilities in the field of technology and art. I am eager to learn new things.</t>
 						</div>
 					</div>
 				</div>
+			</div>
+		</section>
 
-			</section>
+		<section data-aos="fade-in" data-aos-delay="200" class="section">
+			<nav class="level">
+				<div class="level-item has-text-centered ">
+					<div>
+						<p class="title has-text-grey-lighter">Full stack</p>
+					</div>
+				</div>
+				<div class="level-item has-text-centered">
+					<div>
+						<p class="title has-text-grey-lighter">Frontend</p>
+					</div>
+				</div>
+				<div class="level-item has-text-centered">
+					<div>
+						<p class="title has-text-grey-lighter">Software</p>
+					</div>
+				</div>
+				<div class="level-item has-text-centered ">
+					<div>
+						<p class="title has-text-grey-lighter">Film editor</p>
+					</div>
+				</div>
+				<div class="level-item has-text-centered">
+					<div>
+						<p class="title has-text-grey-lighter">Film creator</p>
+					</div>
+				</div>
+			</nav>
+			<nav class="level">
 
-		
+			</nav>
+		</section>
 
-		<section class="section">
+		<div class="down-arrow">
+			<span class="material-icons" style="font-size: 50px;">
+				expand_more
+			</span>
+		</div>
+
+		<section data-aos="fade-right" data-aos-anchor-placement="top-center" class="section">
 			<h5 class="subtitle is-5 has-text-centered">
 				<strong class="has-text-light">
 					<t lang="en">I'm insterested in:</t>
@@ -96,7 +147,8 @@
 		</section>
 
 
-		<section class="section">
+		<section data-aos="fade-left" data-aos-anchor-placement="top-center" class="section">
+
 			<h5 class="subtitle is-5">
 				<strong class="has-text-light">
 					<t lang="en">I've used:</t>
@@ -148,151 +200,161 @@
 
 		</section>
 
-		<section class="section">
-			<nav class="panel">
-				<p class="panel-heading has-text-centered">
-					<t lang="en">Code repositories</t>
-					<t lang="pl">Repozytorium z kodem</t>
-				</p>
-				<p class="panel-tabs">
-					<a class="is-active" id="web-tabs" onclick="selectWebTabs()">Web</a>
-					<a id="software-tabs" onclick="selectSoftwareTabs()">Software</a>
-				</p>
-				<div id="panel-web">
-					<a class="panel-block">
-						<span class="material-icons panel-icon">
-							language
-						</span>
-						Ping Pong
-						<span class="tag panel-tag">React.js</span>
-					</a>
-					<a class="panel-block">
-						<span class="material-icons panel-icon">
-							language
-						</span>
-						Merchant Dashboard
-						<span class="tag panel-tag">React.js</span>
-					</a>
-					<a class="panel-block">
-						<span class="material-icons panel-icon">
-							language
-						</span>
-						Simple Marketplace
-						<span class="tag panel-tag">.Net</span>
-						<span class="tag panel-tag">SQL Express</span>
-					</a>
-					<a class="panel-block">
-						<span class="material-icons panel-icon">
-							language
-						</span>
-						Password Manager
-						<span class="tag panel-tag">Flask</span>
-						<span class="tag panel-tag">SQLite</span>
-					</a>
-					<a class="panel-block">
-						<span class="material-icons panel-icon">
-							language
-						</span>
-						Ingredient Calc for cooking
-						<span class="tag panel-tag">HTML</span>
-						<span class="tag panel-tag">JS</span>
-						<span class="tag panel-tag">CSS</span>
-					</a>
+		<div data-aos="fade-in" data-aos-anchor-placement="top-center">
+			<section class="section">
+				<nav class="panel">
+					<p class="panel-heading has-text-centered has-text-light">
+						<t lang="en">Code repositories</t>
+						<t lang="pl">Repozytorium z kodem</t>
+					</p>
+					<p class="panel-tabs">
+						<a class="is-active has-text-light" id="web-tabs" onclick="selectWebTabs()">Web</a>
+						<a class="has-text-black" id="software-tabs" onclick="selectSoftwareTabs()">Software</a>
+					</p>
+					<div id="panel-web">
+						<a class="panel-block">
+							<span class="material-icons panel-icon">
+								language
+							</span>
+							Ping Pong
+							<span class="tag panel-tag">React.js</span>
+						</a>
+						<a class="panel-block">
+							<span class="material-icons panel-icon">
+								language
+							</span>
+							Merchant Dashboard
+							<span class="tag panel-tag">React.js</span>
+						</a>
+						<a class="panel-block">
+							<span class="material-icons panel-icon">
+								language
+							</span>
+							Simple Marketplace
+							<span class="tag panel-tag">.Net</span>
+							<span class="tag panel-tag">SQL Express</span>
+						</a>
+						<a class="panel-block">
+							<span class="material-icons panel-icon">
+								language
+							</span>
+							Password Manager
+							<span class="tag panel-tag">Flask</span>
+							<span class="tag panel-tag">SQLite</span>
+						</a>
+						<a class="panel-block">
+							<span class="material-icons panel-icon">
+								language
+							</span>
+							Ingredient Calc for cooking
+							<span class="tag panel-tag">HTML</span>
+							<span class="tag panel-tag">JS</span>
+							<span class="tag panel-tag">CSS</span>
+						</a>
 
+					</div>
+					<div id="panel-software" class="is-hidden">
+						<a class="panel-block">
+							<span class="material-icons panel-icon">
+								desktop_windows
+							</span>
+							Python Movie Maker
+							<span class="tag panel-tag">Python</span>
+							<span class="tag panel-tag">PyQT5</span>
+						</a>
+						<a class="panel-block">
+							<span class="material-icons panel-icon">
+								desktop_windows
+							</span>
+							Simple parallel programs
+							<span class="tag panel-tag">C</span>
+							<span class="tag panel-tag">OpenMP</span>
+							<span class="tag panel-tag">MPI</span>
+						</a>
+					</div>
+				</nav>
+			</section>
+
+			<section class="section">
+				<h5 class="subtitle is-5 has-text-light">
+					<t lang="en">Currently I'm working on:</t>
+					<t lang="pl">Obecnie pracuję nad:</t>
+				</h5>
+				<div class="box custom-box">
+					<ul>
+						<li class="has-text-grey-lighter li-block">
+
+							<t lang="en">Web app for food managment in home area and dietary analysis</t>
+							<t lang="pl">Aplikacją internetową do zarządzania żywnością w gospodarstwie domowym i
+								analizą
+								żywieniowej</t>
+
+							<span class="tag working-tag-first">Python</span>
+							<span class="tag working-tag">Django</span>
+							<span class="tag working-tag">PostgreSQL</span>
+						</li>
+						<li class="has-text-grey-lighter">
+							<t lang="en">Web app for reviewing and collecting books and films.</t>
+							<t lang="pl">Aplikacją internetową do recenzjowania i kolekcjonowania książek i filmów</t>
+							<span class="tag working-tag-first">Spring</span>
+							<span class="tag working-tag">React.js</span>
+							<span class="tag working-tag">PostgreSQL</span>
+						</li>
+						<li class="has-text-grey-lighter">
+							<t lang="en">Team project: social web app based on map: <em>SocialMap</em></t>
+							<t lang="pl">Projektem zespołowym: portal społecznościowy bazujący na mapie:
+								<em>SocialMap</em>
+							</t>
+							<span class="tag working-tag-first">.NET</span>
+							<span class="tag working-tag">React.js</span>
+							<span class="tag working-tag">SQL Server Express</span>
+						</li>
+
+						<li class="has-text-grey-lighter">
+							<t lang="en">Simply 3D graphic engine for university classes</t>
+							<t lang="pl">Prostym silnikiem 3D na zajęcia ze studiów</t>
+							<span class="tag working-tag-first">C++</span>
+						</li>
+					</ul>
 				</div>
-				<div id="panel-software" class="is-hidden">
-					<a class="panel-block">
-						<span class="material-icons panel-icon">
-							desktop_windows
-						</span>
-						Python Movie Maker
-						<span class="tag panel-tag">Python</span>
-						<span class="tag panel-tag">PyQT5</span>
-					</a>
-					<a class="panel-block">
-						<span class="material-icons panel-icon">
-							desktop_windows
-						</span>
-						Simple parallel programs
-						<span class="tag panel-tag">C</span>
-						<span class="tag panel-tag">OpenMP</span>
-						<span class="tag panel-tag">MPI</span>
-					</a>
+			</section>
+		</div>
+
+		<div data-aos="slide-up" data-aos-anchor-placement="top-center">
+			<section class="section">
+				<h3 class="subtitle is-3 gaming-text has-text-grey-lighter has-text-centered">
+					<t lang="en">My games:</t>
+					<t lang="pl">Moje gry:</t>
+				</h3>
+				<div class="is-flex is-horizontal-centered">
+					<figure class="image itch-logo">
+						<a href="https://masterthegrey.itch.io" target="_blank"><img src="./img/logo-white-new.svg"></a>
+					</figure>
 				</div>
-			</nav>
-		</section>
+			</section>
 
-		<section class="section">
-			<h5 class="subtitle is-5 has-text-light">
-				<t lang="en">Currently I'm working on:</t>
-				<t lang="pl">Obecnie pracuję nad:</t>
-			</h5>
-			<div class="box custom-box">
-				<ul>
-					<li class="has-text-grey-lighter li-block">
+			<section class="section">
+				<h4 class="subtitle is-4 films-text has-text-grey-lighter has-text-centered">
+					<t lang="en">My Films:</t>
+					<t lang="pl">Moje filmy:</t>
+				</h4>
 
-						<t lang="en">Web app for food managment in home area and dietary analysis</t>
-						<t lang="pl">Aplikacją internetową do zarządzania żywnością w gospodarstwie domowym i
-							analizą
-							żywieniowej</t>
-
-						<span class="tag working-tag-first">Python</span>
-						<span class="tag working-tag">Django</span>
-						<span class="tag working-tag">PostgreSQL</span>
-					</li>
-					<li class="has-text-grey-lighter">
-						<t lang="en">Web app for reviewing and collecting books and films.</t>
-						<t lang="pl">Aplikacją internetową do recenzjowania i kolekcjonowania książek i filmów</t>
-						<span class="tag working-tag-first">Spring</span>
-						<span class="tag working-tag">React.js</span>
-						<span class="tag working-tag">PostgreSQL</span>
-					</li>
-					<li class="has-text-grey-lighter">
-						<t lang="en">Team project: social web app based on map: <em>SocialMap</em></t>
-						<t lang="pl">Projektem zespołowym: portal społecznościowy bazujący na mapie: <em>SocialMap</em>
-						</t>
-						<span class="tag working-tag-first">.NET</span>
-						<span class="tag working-tag">React.js</span>
-						<span class="tag working-tag">SQL Server Express</span>
-					</li>
-
-					<li class="has-text-grey-lighter">
-						<t lang="en">Simply 3D graphic engine for university classes</t>
-						<t lang="pl">Prostym silnikiem 3D na zajęcia ze studiów</t>
-						<span class="tag working-tag-first">C++</span>
-					</li>
-				</ul>
-			</div>
-		</section>
-
-		<section class="section">
-			<h3 class="subtitle is-3 gaming-text has-text-grey-lighter has-text-centered">
-				<t lang="en">My games:</t>
-				<t lang="pl">Moje gry:</t>
-			</h3>
-			<div class="is-flex is-horizontal-centered">
-				<figure class="image itch-logo">
-					<a href="https://masterthegrey.itch.io" target="_blank"><img src="./img/logo-white-new.svg"></a>
-				</figure>
-			</div>
-		</section>
-
-		<section class="section">
-			<h4 class="subtitle is-4 films-text has-text-grey-lighter has-text-centered">
-				<t lang="en">My Films:</t>
-				<t lang="pl">Moje filmy:</t>
-			</h4>
-
-			<div class="is-flex is-horizontal-centered">
-				<iframe id="iframe-yt" width="500" height="200"
-					src="https://www.youtube.com/embed/videoseries?list=PLN5wwLPX-2S3sYoUHq1PqEGMuU01c2JIE"
-					loading="lazy" title="YouTube video player" frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen></iframe>
-			</div>
-		</section>
+				<div class="is-flex is-horizontal-centered">
+					<iframe id="iframe-yt" width="500" height="200"
+						src="https://www.youtube.com/embed/videoseries?list=PLN5wwLPX-2S3sYoUHq1PqEGMuU01c2JIE"
+						loading="lazy" title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+			</section>
+		</div>
 
 	</div>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({ once: true });
+	</script>
 </body>
 
 <footer class="footer">

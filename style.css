@@ -90,9 +90,25 @@ body {
     animation: gradient 30s ease infinite; */
 }
 
-.panel {
-    background-color: rgb(192, 191, 191);
+.panel-icon{
+    color: rgb(13, 135, 192) !important;
 }
+
+.panel{
+    background-color: var(--box-color) !important;
+}
+
+.panel-heading{
+    background-color: var(--box-color) !important;;
+}
+a.panel-block{
+    color: rgb(232, 232, 232);
+}
+
+a.panel-block:hover{
+    background-color: rgba(230, 230, 230, 0.525) !important;
+}
+
 
 #title-div {
 
@@ -200,11 +216,17 @@ footer {
     /* 100/56.25 = 560/315 = 1.778 */
 }
 
+#language-div {
+    float: right;
+    display: inline-flex;
+    margin-right: 40px;
+    gap: 10px;
+}
 
-/* .footer-logo{
-    height: 32px;
-    
-} */
+.lang-border {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
 
 @media (max-width: 600px) {
 
@@ -247,14 +269,20 @@ footer {
     }
 }
 
+@media (max-width: 700px) {
+    .level-item.title {
+        margin-bottom: 30px;
+    }
+}
+
 @media (min-width: 300px) and (max-width: 650px) {
-    #title-div{
+    #title-div {
         display: flex;
         max-height: inherit;
         flex-direction: column;
     }
 
-    #titles-div{
+    #titles-div {
         margin-left: 0px;
 
         padding-left: 0px;
@@ -272,19 +300,55 @@ footer {
         margin-top: 20px;
         font-size: 15px;
     }
+
     #name-div {
         font-size: 2.3rem;
         padding-right: 10px;
         height: auto;
         text-align: center;
     }
-    #title-section{
+
+    #title-section {
         padding-bottom: 300px;
     }
 }
 
-@media (min-width: 2000px){
-    #name-div{
+@media (min-width: 2000px) {
+    #name-div {
         font-size: 100px;
     }
+}
+
+.down-arrow {
+    display: none;
+}
+
+@media (min-width: 790px) {
+
+.down-arrow {
+    display: block;
+    color: white;
+    position: absolute;
+    top: calc(100vh - 80px);
+    left: calc(50% - 10px);
+    animation: jump 1.5s infinite;
+  }
+  
+  .down-arrow:after {
+    position: absolute;
+    top: 12px;
+    left: -10px;
+  }
+  
+  @keyframes jump {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
 }
