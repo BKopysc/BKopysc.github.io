@@ -1,6 +1,6 @@
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  }
+// window.onbeforeunload = function () {
+//     window.scrollTo(0, 0);
+//   }
 
 function selectWebTabs(){
     webTabs =  document.getElementById("web-tabs");

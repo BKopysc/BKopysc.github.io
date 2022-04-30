@@ -203,6 +203,15 @@ footer {
     background-color: red;
 }
 
+.footer-logo, #bulma-logo, #profile-img{
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 #bulma-logo {
     height: 24px;
     margin-top: 10px;
