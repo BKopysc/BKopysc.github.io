@@ -1,5 +1,5 @@
 :root {
-    --box-color: rgba(255, 255, 255, 0.029);
+    --box-color: rgba(255, 255, 255, 0.132);
 }
 @font-face{
     font-family: retroFont;
@@ -16,6 +16,25 @@ body.pl :lang(en) {
 
 body.en :lang(pl) {
     display: none;
+}
+
+.name-subtitle{
+    margin-top: 40px;
+}
+
+.description{
+    white-space: pre-line;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#description-div{
+    margin-top: -10px;
+    margin-bottom: 80px;
+}
+
+#film-tags{
+    margin-top: 10px;
 }
 
 /* #nameTitle {
@@ -111,6 +130,9 @@ footer{
 
     #bulma-logo{
         float: none;
+    }
+    .description{
+        width: 85vw;
     }
   }
 

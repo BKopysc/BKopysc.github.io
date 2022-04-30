@@ -1,5 +1,3 @@
-window.onload = load;
-
 function selectWebTabs(){
     webTabs =  document.getElementById("web-tabs");
     if(! webTabs.classList.contains('is-active')){
