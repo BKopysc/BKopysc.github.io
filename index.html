@@ -22,46 +22,30 @@
 	<div class="content container">
 		<br />
 
-		<section class="section">
-			<div class="is-flex is-horizontal-centered">
-				<figure class="image is-128x128">
-					<img class="is-rounded" src="./img/profile.png">
-				</figure>
-			</div>
-			<div>
-				<h5 class="subtitle name-subtitle is-5 has-text-centered has-text-light">
-					<t lang="en">My name is</t>
-					<t lang="pl">Nazywam się</t>
-				</h5>
-				<h3 class="title is-3 has-text-centered has-text-light" id="mainTitle">Bartłomiej Kopyść</h3>
-			</div>
-			<div class="is-flex is-horizontal-centered">
-				<div class="tags">
-					<span class="tag">Full Stack</span>
-					<span class="tag">Fronted</span>
-					<span class="tag">Software</span>
-				</div>
-			</div>
-			<div id="film-tags" class="is-flex is-horizontal-centered">
-				<div class="tags">
-					<span class="tag">
-						<t lang="en">Film editor</t>
-						<t lang="pl">Montażysta</t>
-					</span>
-					<span class="tag">
-						<t lang="en">Film creator</t>
-						<t lang="pl">Twórca filmów</t>
-					</span>
-				</div>
-			</div>
-		</section>
+		<section class="section"  id="title-section">
 
-		<div id="description-div" class="is-flex is-horizontal-centered">
-			<t class="description">
-				Obecnie jestem studentem 3 roku Politechniki Warszawskiej na kierunku Informatyka Stosowana.
-				Stale pogłębiam swoją wiedzę z zakresu technologii i sztuki. Chętnie uczę się nowych rzeczy.
-			</t>
-		</div>
+				<div id="title-div">
+					<img id="profile-img" src="./img/main_profile.jpeg">
+					<div id="titles-div">
+						<div id="welcome-div">
+							<t lang="en">Hi! I am</t>
+							<t lang="pl">Cześć! Nazywam się</t>
+						</div>
+						<div id="name-div">
+							<t>Bartłomiej Kopyść</t>
+						</div>
+						<div id="about-div">
+							<div class="content has-text-grey-lighter" id="about-content-div">
+								<t lang="pl">Jestem studentem Politechniki Warszawskiej na kierunku Informatyka Stosowana. Obecnie jestem na trzecim roku. Stale pogłębiam swoją wiedzę i umiejętności z zakresu technologii i sztuki. Chętnie uczę się nowych rzeczy.</t>
+								<t lang="en">I am a student at Warsaw University of Technology, majoring in Applied Informatics. Currently I am on my third year. I am constantly expanding my knowledge and abilities in the field of technology and art. I am eager to learn new things.</t>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+		
 
 		<section class="section">
 			<h5 class="subtitle is-5 has-text-centered">
@@ -195,7 +179,7 @@
 						</span>
 						Simple Marketplace
 						<span class="tag panel-tag">.Net</span>
-						<span class="tag panel-tag">SQL Server Express</span>
+						<span class="tag panel-tag">SQL Express</span>
 					</a>
 					<a class="panel-block">
 						<span class="material-icons panel-icon">
@@ -245,18 +229,21 @@
 			</h5>
 			<div class="box custom-box">
 				<ul>
-					<li class="has-text-grey-lighter">
+					<li class="has-text-grey-lighter li-block">
+
 						<t lang="en">Web app for food managment in home area and dietary analysis</t>
-						<t lang="pl">Aplikacją internetową do zarządzania żywnością w gospodarstwie domowym i analizą
+						<t lang="pl">Aplikacją internetową do zarządzania żywnością w gospodarstwie domowym i
+							analizą
 							żywieniowej</t>
-						<span class="tag working-tag">Python</span>
+
+						<span class="tag working-tag-first">Python</span>
 						<span class="tag working-tag">Django</span>
 						<span class="tag working-tag">PostgreSQL</span>
 					</li>
 					<li class="has-text-grey-lighter">
 						<t lang="en">Web app for reviewing and collecting books and films.</t>
 						<t lang="pl">Aplikacją internetową do recenzjowania i kolekcjonowania książek i filmów</t>
-						<span class="tag working-tag">Spring</span>
+						<span class="tag working-tag-first">Spring</span>
 						<span class="tag working-tag">React.js</span>
 						<span class="tag working-tag">PostgreSQL</span>
 					</li>
@@ -264,15 +251,15 @@
 						<t lang="en">Team project: social web app based on map: <em>SocialMap</em></t>
 						<t lang="pl">Projektem zespołowym: portal społecznościowy bazujący na mapie: <em>SocialMap</em>
 						</t>
-						<span class="tag working-tag">.NET</span>
+						<span class="tag working-tag-first">.NET</span>
 						<span class="tag working-tag">React.js</span>
 						<span class="tag working-tag">SQL Server Express</span>
 					</li>
 
 					<li class="has-text-grey-lighter">
 						<t lang="en">Simply 3D graphic engine for university classes</t>
-						<t lang="pl">Prosty silnik 3D na zajęcia ze studiów</t>
-						<span class="tag working-tag">C++</span>
+						<t lang="pl">Prostym silnikiem 3D na zajęcia ze studiów</t>
+						<span class="tag working-tag-first">C++</span>
 					</li>
 				</ul>
 			</div>
@@ -295,13 +282,14 @@
 				<t lang="en">My Films:</t>
 				<t lang="pl">Moje filmy:</t>
 			</h4>
-			<figure class="image is-16by9">
-				<iframe class="has-ratio"
+
+			<div class="is-flex is-horizontal-centered">
+				<iframe id="iframe-yt" width="500" height="200"
 					src="https://www.youtube.com/embed/videoseries?list=PLN5wwLPX-2S3sYoUHq1PqEGMuU01c2JIE"
 					loading="lazy" title="YouTube video player" frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen></iframe>
-			</figure>
+			</div>
 		</section>
 
 	</div>
