@@ -1,7 +1,3 @@
-function load() {
-    document.body.className = 'pl';
-}
-
 window.onload = load;
 
 function selectWebTabs(){

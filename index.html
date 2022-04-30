@@ -7,6 +7,7 @@
 	<meta name="description" content="Simple github-like cv">
 	<meta name="author" content="Bartlomiej Kopysc">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -15,7 +16,7 @@
 
 </head>
 
-<body>
+<body class="pl">
 	<button onclick="document.body.className='en'">english</button><button
 		onclick="document.body.className='pl'">polski</button>
 	<div class="content container">
@@ -87,14 +88,14 @@
 				</strong>
 			</h5>
 
-			<div class="box">
+			<div class="box custom-box">
 				<div class="tags">
-					<span class="tag">Asembler</span>
-					<span class="tag">Spring</span>
-					<span class="tag">C++</span>
-					<span class="tag">.NET</span>
-					<span class="tag">Lua</span>
-					<span class="tag">Ruby</span>
+					<span class="tag is-info">Asembler</span>
+					<span class="tag is-info">Spring</span>
+					<span class="tag is-info">C++</span>
+					<span class="tag is-info">.NET</span>
+					<span class="tag is-info">Lua</span>
+					<span class="tag is-info">Ruby</span>
 				</div>
 			</div>
 
@@ -105,14 +106,14 @@
 				</strong>
 			</h5>
 
-			<div class="box">
+			<div class="box custom-box">
 				<div class="tags">
-					<span class="tag">Python</span>
-					<span class="tag">Django/Flask</span>
-					<span class="tag">C#</span>
-					<span class="tag">C</span>
-					<span class="tag">React.js</span>
-					<span class="tag">Java</span>
+					<span class="tag is-info">Python</span>
+					<span class="tag is-info">Django/Flask</span>
+					<span class="tag is-info">C#</span>
+					<span class="tag is-info">C</span>
+					<span class="tag is-info">React.js</span>
+					<span class="tag is-info">Java</span>
 				</div>
 			</div>
 
@@ -123,10 +124,10 @@
 				</strong>
 			</h5>
 
-			<div class="box">
+			<div class="box custom-box">
 				<div class="tags">
-					<span class="tag">Windows</span>
-					<span class="tag">Linux</span>
+					<span class="tag is-info">Windows</span>
+					<span class="tag is-info">Linux</span>
 				</div>
 			</div>
 
@@ -211,7 +212,7 @@
 				<t lang="en">Currently I'm working on:</t>
 				<t lang="pl">Obecnie pracuję nad:</t>
 			</h5>
-			<div class="box currently-box">
+			<div class="box custom-box">
 				<ul>
 					<li class="has-text-grey-lighter">
 						<t lang="en">Web app for food managment in home area and dietary analysis</t>
@@ -246,87 +247,56 @@
 			</div>
 		</section>
 
-		<hr>
 		<section class="section">
-			<h3 class="subtitle is-3 has-text-light has-text-centered">
-				<t lang="en">Enterteiment:</t>
-				<t lang="pl">Rozrywka:</t>
+			<h3 class="subtitle is-3 gaming-text has-text-grey-lighter has-text-centered">
+				<t lang="en">My games:</t>
+				<t lang="pl">Moje gry:</t>
 			</h3>
-
-			<h3 class="subtitle is-3 gaming-text has-text-grey-lighter">
-				<t lang="en">Gaming zone:</t>
-				<t lang="pl">Strefa gier:</t>
-				<figure class="image">
-					<img src="./img/logo-white-new.png">
+			<div class="is-flex is-horizontal-centered">
+				<figure class="image itch-logo">
+					<a href="https://masterthegrey.itch.io" target="_blank"><img src="./img/logo-white-new.svg"></a>
 				</figure>
-	
-			</h3>
-
-
-
-
-
+			</div>
 		</section>
 
+		<section class="section">
+			<h4 class="subtitle is-4 films-text has-text-grey-lighter has-text-centered">
+				<t lang="en">My Films:</t>
+				<t lang="pl">Moje filmy:</t>
+			</h4>
+			<figure class="image is-16by9">
+				<iframe class="has-ratio"
+					src="https://www.youtube.com/embed/videoseries?list=PLN5wwLPX-2S3sYoUHq1PqEGMuU01c2JIE"
+					loading="lazy" title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</figure>
+		</section>
 
-
-		<h2>Fun zone</h2>
-		<p>My fun games made in <code>PICO-8</code> or <code>Unity</code>:<br><a
-				href="https://masterthegrey.itch.io">https://masterthegrey.itch.io</a></p>
-		<p>&nbsp;
-			&nbsp;</p>
-		<hr>
-
-		<br />
-		<h5><strong>Interesuję się:</strong> 🖥️
-			informatyką, 🕹️ grami retro i 🎬 tworzeniem filmów</h5>
-		<h5><strong>Używałem trochę:</strong> <code>Ruby</code>,
-			<code>Asembler</code>, <code>Spring</code>, <code>C++</code>, <code>.NET</code>, <code>Lua</code>
-		</h5>
-		<h5><strong>Często używam:</strong> <code>Python</code>,
-			<code>Django/Flask</code>, <code>C</code>, <code>C#</code>, <code>Java</code>, <code>React.js</code>.
-		</h5>
-		<h6>I chcę używać jeszcze więcej 👀</h6>
-		<h5><strong>Uwielbiam:</strong> <code>🗔 Windows</code> i
-			<code>🐧 Linux</code>.
-		</h5>
-		<h4>Znajdziesz tu głównie moje
-			projekty uniwersyteckie, ale także własne pomysły.</h4>
-		<p>&nbsp;</p>
-		<h2>Obecnie pracuję nad:</h2>
-		<ul>
-			<li>Aplikacją internetową do zarządzania jedzeniem w gospodarstwie domowym. Przypominanie o dacie
-				ważności i
-				analiza danych do generowania zdrowych wskazówek 🍏 (<code>Python</code> + <code>Django</code> +
-				<code>PostgreSQL</code>)
-			</li>
-			<li>Aplikacją internetową do recenzowania książek i filmów. Użytkownik może dodawać oceny i pozycje do
-				swojej
-				biblioteki, a także dzielić się swoją kolekcją 📙 (<code>Spring</code> + <code>React.js</code> +
-				<code>PostgreSQL</code>)
-			</li>
-			<li>Projektem zespołowym: aplikacja społecznościowa do dzielenia się ulubionymi miejscami na mapie:
-				<em>SocialMap</em>. Ulubione restauracje, graffiti i wiele więcej w jednym miejscu. Mile widziane są
-				reakcje
-				typu &quot;lubię to i nie lubię&quot; 🗺️ (<code>.NET</code> + <code>React.js</code> +
-				<code>Microsoft Express SQL</code> )
-			</li>
-			<li>Prostym silnikiem graficznym 3D na zajęcia 🖌️ (<code>C++</code>)</li>
-		</ul>
-		<h2>Strefa zabawy</h2>
-		<p>Moje gry stworzone w <code>PICO-8</code> lub <code>Unity</code>:<br><a
-				href="https://masterthegrey.itch.io">https://masterthegrey.itch.io</a></p>
 	</div>
 </body>
 
 <footer class="footer">
 	<div class="content has-text-centered">
 		<p>
-			by Bartłomiej Kopyść | 2022
+			Bartłomiej Kopyść @ 2022
 		</p>
-		<p>GitHub: <a href="https://github.com/BKopysc">@BKopysc</a></p>
-		<p>LinkedIn: <a href="https://www.linkedin.com/in/bartłomiej-kopyść-5bbb91205/"></a></p>
+		<div class="social-links">
+			<a>
+				<img class="footer-logo" src="./img/icons8-github-48.png">
+			</a>
+			<a>
+				<img class="footer-logo" src="./img/icons8-linkedin-circled-48.png">
+			</a>
+			<a>
+				<img class="footer-logo" src="./img/icons8-youtube-48.png">
+			</a>
+		</div>
+			<a>
+				<img id="bulma-logo" src="./img/made-with-bulma--semiblack.png">
+			</a>
 	</div>
+
 </footer>
 
 </html>

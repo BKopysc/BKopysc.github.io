@@ -1,8 +1,15 @@
+:root {
+    --box-color: rgba(255, 255, 255, 0.029);
+}
 @font-face{
     font-family: retroFont;
     src: url(./fonts/VT323-Regular.ttf);
 }
 
+@font-face {
+    font-family: filmFont;
+    src: url(./fonts/Limelight-Regular.ttf);
+}
 body.pl :lang(en) {
     display: none;
 }
@@ -37,8 +44,8 @@ img{
     border-radius: 10px;
 }
 
-.interest-tile.box{
-    background-color: rgba(255, 255, 255, 0.029);
+.interest-tile.box, .custom-box.box {
+    background-color: var(--box-color);
 }
 
 
@@ -51,8 +58,8 @@ body {
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
-    background-size: 400% 400%;
-    animation: gradient 30s ease infinite;
+    /* background-size: 400% 400%;
+    animation: gradient 30s ease infinite; */
 }
 
 .panel{
@@ -71,14 +78,43 @@ body {
     font-family: retroFont;
 }
 
+.films-text
+{
+    font-family: filmFont;
+}
+
+.itch-logo{
+    width: 200px;
+}
+
+footer{
+    height: 200px;
+    background-color: red;
+}
+
+#bulma-logo{
+    height: 24px;
+    margin-top: 10px;
+    float: left;
+}
+
+/* .footer-logo{
+    height: 32px;
+    
+} */
+
 @media (max-width: 600px) {
 
     .working-tag{
         margin-top: 2px;
     }
+
+    #bulma-logo{
+        float: none;
+    }
   }
 
-@keyframes gradient {
+/* @keyframes gradient {
     0% {
         background-position: 0% 50%;
     }
@@ -88,4 +124,4 @@ body {
     100% {
         background-position: 0% 50%;
     }
-}
+} */
