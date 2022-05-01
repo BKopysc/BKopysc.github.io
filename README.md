@@ -1,3 +1,2 @@
-# BKopysc.github.io
-
-Portfolio: https://bkopysc.github.io
+# Portfolio
+https://bkopysc.github.io
