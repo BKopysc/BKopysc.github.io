@@ -1,10 +1,12 @@
-// window.onbeforeunload = function () {
-//     window.scrollTo(0, 0);
-//   }
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
 
-function selectWebTabs(){
-    webTabs =  document.getElementById("web-tabs");
-    if(! webTabs.classList.contains('is-active')){
+window.onscroll = function () { hideArrow() };
+
+function selectWebTabs() {
+    webTabs = document.getElementById("web-tabs");
+    if (!webTabs.classList.contains('is-active')) {
         webTabs.classList.add('is-active');
         document.getElementById("panel-web").classList.remove('is-hidden');
         document.getElementById("software-tabs").classList.add('has-text-black');
@@ -14,11 +16,18 @@ function selectWebTabs(){
     }
 }
 
+function hideArrow() {
+    if (document.getElementById("down-arrow")) {
+        const arrow = document.getElementById("down-arrow");
+        arrow.style.opacity = '0';
+        arrow.addEventListener('transitionend', () => arrow.remove());
+    }
+}
 
 
-function selectSoftwareTabs(){
+function selectSoftwareTabs() {
     softwareTabs = document.getElementById("software-tabs");
-    if(! softwareTabs.classList.contains('is-active')){
+    if (!softwareTabs.classList.contains('is-active')) {
         softwareTabs.classList.add('is-active');
         document.getElementById("panel-software").classList.remove('is-hidden');
         document.getElementById("web-tabs").classList.remove("is-active", "has-text-light");
@@ -28,15 +37,15 @@ function selectSoftwareTabs(){
     }
 }
 
-function changeLanguage(lang){
-    if(lang === 'pl'){
+function changeLanguage(lang) {
+    if (lang === 'pl') {
         document.getElementById("en-language").classList.remove("lang-border");
         document.getElementById("pl-language").classList.add("lang-border");
-        document.body.className='pl'
+        document.body.className = 'pl'
     }
-    else{
+    else {
         document.getElementById("pl-language").classList.remove("lang-border");
         document.getElementById("en-language").classList.add("lang-border");
-        document.body.className='en'
+        document.body.className = 'en'
     }
 }
