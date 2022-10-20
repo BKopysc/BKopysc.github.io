@@ -91,6 +91,7 @@
 		</section>
 
 		<div class="down-arrow" id="down-arrow" onscroll="hideArrow()">
+			<p class="has-text-centered p-scroll">SCROLL</p>
 			<span class="material-icons" style="font-size: 50px;">
 				expand_more
 			</span>
@@ -158,14 +159,15 @@
 
 			<div class="box custom-box">
 				<div class="tags">
-					<span class="tag is-info">Spring</span>
 					<span class="tag is-info">C++</span>
 					<span class="tag is-info">.NET</span>
 					<span class="tag is-info">Lua</span>
-					<span class="tag is-info">Ruby</span>
-					<span class="tag is-info">Java</span>
+					<span class="tag is-info">C#</span>
+					<span class="tag is-info">C</span>
 					<span class="tag is-info">Django/Flask</span>
 					<span class="tag is-info">Figma</span>
+					<span class="tag is-info">Svelte</span>
+					<span class="tag is-info">Flutter</span>
 				</div>
 			</div>
 
@@ -178,11 +180,26 @@
 
 			<div class="box custom-box">
 				<div class="tags">
+					<span class="tag is-info">Spring Boot</span>
 					<span class="tag is-info">Python</span>
-					<span class="tag is-info">HTML</span>
-					<span class="tag is-info">C#</span>
-					<span class="tag is-info">C</span>
+					<span class="tag is-info">Java</span>
+					<span class="tag is-info">Angular</span>
 					<span class="tag is-info">React.js</span>
+				</div>
+			</div>
+
+			
+			<h5 class="subtitle is-5">
+				<strong class="has-text-light">
+					<t lang="en">Data bases:</t>
+					<t lang="pl">Bazy danych:</t>
+				</strong>
+			</h5>
+
+			<div class="box custom-box">
+				<div class="tags">
+					<span class="tag is-info">PostgreSQL</span>
+					<span class="tag is-info">MongoDB</span>
 				</div>
 			</div>
 
@@ -211,7 +228,7 @@
 					</p>
 					<p class="panel-tabs">
 						<a class="is-active has-text-light" id="web-tabs" onclick="selectWebTabs()">Web</a>
-						<a class="has-text-black" id="software-tabs" onclick="selectSoftwareTabs()">Software</a>
+						<a class="has-text-black" id="software-tabs" onclick="selectSoftwareTabs()">Software + Mobile</a>
 					</p>
 					<div id="panel-web">
 						<a class="panel-block" href="https://github.com/BKopysc/ping-pong-app" target="_blank">
@@ -253,6 +270,24 @@
 							<span class="tag panel-tag">JS</span>
 							<span class="tag panel-tag">CSS</span>
 						</a>
+						<a class="panel-block" href="https://github.com/Kacpu/SocialMap" target="_blank">
+							<span class="material-icons panel-icon">
+								language
+							</span>
+							SocialMap
+							<span class="tag panel-tag">React.js</span>
+							<span class="tag panel-tag">.NET</span>
+							<span class="tag panel-tag">SQL Server Express</span>
+						</a>
+						<a class="panel-block" href="https://github.com/BKopysc/my-shelf-react" target="_blank">
+							<span class="material-icons panel-icon">
+								language
+							</span>
+							MyShelf
+							<span class="tag panel-tag">React.js</span>
+							<span class="tag panel-tag">Spring Boot</span>
+							<span class="tag panel-tag">PostgreSQL</span>
+						</a>
 
 					</div>
 					<div id="panel-software" class="is-hidden">
@@ -264,16 +299,31 @@
 							<span class="tag panel-tag">Python</span>
 							<span class="tag panel-tag">PyQT5</span>
 						</a>
-						<a class="panel-block" href="https://github.com/BKopysc/" target="_blank">
+						<a class="panel-block" href="https://github.com/BKopysc/MoveDetection" target="_blank">
 							<span class="material-icons panel-icon">
 								desktop_windows
 							</span>
-							Simple parallel programs
-							<span class="tag panel-tag">C</span>
-							<span class="tag panel-tag">OpenMP</span>
+							Parallel move detection
+							<span class="tag panel-tag">Python</span>
 							<span class="tag panel-tag">MPI</span>
 						</a>
+						<a class="panel-block" href="https://github.com/Kacpu/VirtualCamera" target="_blank">
+							<span class="material-icons panel-icon">
+								desktop_windows
+							</span>
+							Simple 3D Engine - Virtual Camera
+							<span class="tag panel-tag">C#</span>
+						</a>
+						<a class="panel-block" href="https://github.com/BKopysc" target="_blank">
+							<span class="material-icons panel-icon">
+								smartphone
+							</span>
+							Mobile App - Mini notes for lovers
+							<span class="tag panel-tag">Flutter</span>
+							<span class="tag panel-tag">Material Design</span>
+						</a>
 					</div>
+				
 				</nav>
 			</section>
 
@@ -291,31 +341,9 @@
 								analizą
 								żywieniową</t>
 
-							<span class="tag working-tag-first">Python</span>
-							<span class="tag working-tag">Django</span>
+							<span class="tag working-tag-first">Spring Boot</span>
+							<span class="tag working-tag">Angular</span>
 							<span class="tag working-tag">PostgreSQL</span>
-						</li>
-						<li class="has-text-grey-lighter">
-							<t lang="en">Web app for reviewing and collecting books and films.</t>
-							<t lang="pl">Aplikacją internetową do recenzjowania i kolekcjonowania książek i filmów</t>
-							<span class="tag working-tag-first">Spring</span>
-							<span class="tag working-tag">React.js</span>
-							<span class="tag working-tag">PostgreSQL</span>
-						</li>
-						<li class="has-text-grey-lighter">
-							<t lang="en">Team project: social web app based on map: <em>SocialMap</em></t>
-							<t lang="pl">Projektem zespołowym: portal społecznościowy bazujący na mapie:
-								<em>SocialMap</em>
-							</t>
-							<span class="tag working-tag-first">.NET</span>
-							<span class="tag working-tag">React.js</span>
-							<span class="tag working-tag">SQL Server Express</span>
-						</li>
-
-						<li class="has-text-grey-lighter">
-							<t lang="en">Simply 3D graphic engine for university classes</t>
-							<t lang="pl">Prostym silnikiem 3D na zajęcia ze studiów</t>
-							<span class="tag working-tag-first">C++</span>
 						</li>
 					</ul>
 				</div>
@@ -350,9 +378,25 @@
 				</div>
 
 			</section>
-			<h5 class="subtitle is-5 has-text-centered has-text-grey-lighter">
+			<h5 class="subtitle is-3 has-text-centered has-text-grey-lighter">
 				DaVinci Resolve ❤️ 
 			</h5>
+		</div>
+
+		<div data-aos="fade-in">
+			<section class="section">
+				<!-- <p class="subtitle is-4 has-text-grey-lighter has-text-centered">
+					<t lang="en">My CV</t>
+					<t lang="pl">Moje CV</t>
+				</p> -->
+
+				<div class="is-flex is-horizontal-centered">
+					<a href="https://1drv.ms/u/s!AgF0o1_WZqzEmm7GU4cwI-xZuo8U?e=Bygnqb" target="_blank" class="button is-link is-medium cv-btn">
+						<t lang="en">My CV</t>
+						<t lang="pl">Moje CV</t>
+					</a>
+				</div>
+			</section>
 		</div>
 
 	</div>

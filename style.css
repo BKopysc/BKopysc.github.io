@@ -39,6 +39,14 @@ body.en :lang(pl) {
     margin-top: 10px;
 }
 
+.cv-btn{
+    width: 200px;
+}
+
+.p-scroll{
+    font-size: small;
+}
+
 /* #nameTitle {
     margin-bottom: 0px;
 } */
