@@ -111,17 +111,32 @@ body {
 }
 a.panel-block{
     color: rgb(232, 232, 232);
+    display: flex;
+    flex-direction: row;
+    gap: 5px
 }
 
 a.panel-block:hover{
-    background-color: rgba(230, 230, 230, 0.525) !important;
+    background-color: rgba(115, 113, 224, 0.418) !important;
+    color: white !important;
+    font-weight: 500;
 }
 
+.has-text-unselect{
+    color: #9a9ecd;
+}
+
+.tab-font{
+    font-weight: 600;
+}
+
+.tab-font:hover{
+   color:#cdd1fc !important; 
+}
 
 #title-div {
 
     display: inline-flex;
-    height: 20vw;
     min-height: 250px;
     width: auto;
     display: flex;
@@ -135,8 +150,8 @@ a.panel-block:hover{
 }
 
 #profile-img {
-    display: flex;
-    height: 100%;
+    height: auto;
+    width: 15vw;
 }
 
 #welcome-div {
@@ -181,9 +196,6 @@ ul li {
     margin-bottom: 20px;
 }
 
-.panel-tag {
-    margin-left: 8px;
-}
 
 .working-tag {
     margin-right: 8px
@@ -244,6 +256,19 @@ footer {
     border-bottom: 2px solid rgb(255, 255, 255);
 }
 
+.panel-tag-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.working-tag-div{
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
 @media (max-width: 600px) {
 
@@ -293,6 +318,12 @@ footer {
 }
 
 @media (min-width: 300px) and (max-width: 650px) {
+
+    a.panel-block{
+        flex-direction: column;
+        align-items: baseline;
+    }
+
     #title-div {
         display: flex;
         max-height: inherit;
@@ -301,8 +332,11 @@ footer {
 
     #titles-div {
         margin-left: 0px;
-
         padding-left: 0px;
+    }
+
+    #profile-img{
+        width: 60vw;
     }
 
     #welcome-div {
@@ -326,7 +360,7 @@ footer {
     }
 
     #title-section {
-        padding-bottom: 300px;
+        margin-bottom:  20px;
     }
 }
 
