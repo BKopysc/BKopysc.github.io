@@ -70,7 +70,7 @@ body.en :lang(pl) {
 }
 
 img {
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .interest-tile.box, .custom-box.box {
@@ -117,7 +117,7 @@ a.panel-block{
 }
 
 a.panel-block:hover{
-    background-color: rgba(115, 113, 224, 0.418) !important;
+    background-color: rgb(63, 43, 119) !important;
     color: white !important;
     font-weight: 500;
 }
@@ -399,4 +399,8 @@ footer {
       margin-top: 0;
     }
   }
+}
+
+.tags > * {
+    background: rgb(111, 84, 184) !important;
 }

@@ -1,8 +1,84 @@
+// consts
+const currentlyList = [
+    {
+        name: {
+            pl: "Badanie nad metodami projektowymi i implementacyjnymi dla warstwy frontend",
+            eng: "The study on design and implementation methods of the frontend layer"
+        },
+        tags: ["React.js", "Nest.js", "MongoDB"]
+    },
+    {
+        name: {
+            pl: "QIzz - zdecentralizowana platforma do tworzenia quizów ze wsparciem promptów dla AI (ChatGPT, Bing Copilot)",
+            eng: "QIzz - decentralized platform for creating quizzes with AI prompts support (ChatGPT, Bing Copilot)"
+        },
+        tags: ["Angular"]
+    },
+    {
+        name: {
+            pl: "EmojiThis - wieloosobowa gra typu kalambury",
+            eng: "EmojiThis - multiplayer pictionary game"
+        },
+        tags: ["Angular", "Socket.io", "Nest.js"]
+    }
+]
+
+// On start
+document.addEventListener('DOMContentLoaded', function () {
+    generateCurrentlyWorkingList();
+});
+
+
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
-  }
+}
 
 window.onscroll = function () { hideArrow() };
+
+
+function generateCurrentlyWorkingList() {
+    const currentlyWorking = document.getElementById("currently-working-list");
+    currentlyList.forEach((element, index) => {
+        const li = document.createElement("li");
+        li.classList.add("has-text-grey-lighter", "li-block");
+        const t = document.createElement("t");
+        t.classList.add("lang");
+        t.setAttribute("lang", "en");
+        t.textContent = element.name.eng;
+        li.appendChild(t);
+        const t2 = document.createElement("t");
+        t2.classList.add("lang");
+        t2.setAttribute("lang", "pl");
+        t2.textContent = element.name.pl;
+        li.appendChild(t2);
+        const div = document.createElement("div");
+        div.classList.add("working-tag-div");
+        element.tags.forEach(tag => {
+            const span = document.createElement("span");
+            span.classList.add("tag");
+            span.textContent = tag;
+            div.appendChild(span);
+        });
+        li.appendChild(div);
+        currentlyWorking.appendChild(li);
+    });
+
+    // template
+
+    /* 
+    <ul>
+    <li class="has-text-grey-lighter li-block">
+        <t lang="en">en-content</t>
+        <t lang="pl">pl-content</t>
+        
+        <div class="working-tag-div">
+            <span class="tag>tag-content</span>
+        </div>
+    </li>
+    </ul> 
+    */
+}
+
 
 function selectWebTabs() {
     webTabs = document.getElementById("web-tabs");
