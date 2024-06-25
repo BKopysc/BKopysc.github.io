@@ -2,10 +2,10 @@
 const currentlyList = [
     {
         name: {
-            pl: "Badanie nad metodami projektowymi i implementacyjnymi dla warstwy frontend",
-            eng: "The study on design and implementation methods of the frontend layer"
+            pl: "Shortmind - aplikacja do zamieszczania krótkich postów (myśli)",
+            eng: "Shortmind - an application for posting short posts (thoughts)"
         },
-        tags: ["React.js", "Nest.js", "MongoDB"]
+        tags: ["Java Spring Boot", "Angular", "PostgreSQL"]
     },
     {
         name: {
@@ -16,10 +16,10 @@ const currentlyList = [
     },
     {
         name: {
-            pl: "EmojiThis - wieloosobowa gra typu kalambury",
-            eng: "EmojiThis - multiplayer pictionary game"
+            pl: "Edytor low-code do generowania aplikacji w Angularze",
+            eng: "Low-code editor for generating applications in Angular"
         },
-        tags: ["Angular", "Socket.io", "Nest.js"]
+        tags: ["UML", "Obeo", "Sirius"]
     }
 ]
 
